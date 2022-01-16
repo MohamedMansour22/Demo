@@ -1,4 +1,5 @@
 using DemoCode.Models;
+using Elastic.Apm.NetCoreAll;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -38,7 +39,7 @@ namespace DemoCode
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseAllElasticApm(Configuration);
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

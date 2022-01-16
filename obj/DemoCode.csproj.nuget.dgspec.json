@@ -47,6 +47,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Elastic.Apm": {
+              "target": "Package",
+              "version": "[1.13.0, )"
+            },
+            "Elastic.Apm.NetCoreAll": {
+              "target": "Package",
+              "version": "[1.13.0, )"
+            },
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"

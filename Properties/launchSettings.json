@@ -20,6 +20,7 @@
     "DemoCode": {
       "commandName": "Project",
       "launchBrowser": true,
+      "launchUrl": "api/Table1",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
